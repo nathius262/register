@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+
+    <style>
+      body{
+        background-color: rgb(149, 49, 49);
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1{
+        color: black;
+      }
+    </style>
 </head>
 <body>
     <header></header>
@@ -12,22 +27,27 @@
         <form action="">
               <div>
                 <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter username">
+                <input type="text" id="username" placeholder="Enter username"><br><br>
               </div>
 
               <div>
                 <label for="userpassword">password</label>
-                <input type="password" id="Userpassword" placeholder="Enter password">
+                <input type="password" id="Userpassword" placeholder="Enter password"><br><br>
+             </div>
+
+             <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
              </div>
 
              <div>
                 <label for="phone">Phone</label>
-                <input type=" text" id="contact" placeholder="Enter phone number">
+                <input type=" text" id="contact" placeholder="Enter phone number"><br><br>
              </div>
 
              <div>
                 <label for="bio"></label>
-                <textarea name="text" id="Biography" cols="30" rows="10" placeholder="Enter biography"></textarea>
+                <textarea name="text" id="Biography" cols="30" rows="10" placeholder="Enter biography"></textarea><br><br>
              </div>
 
               <button type="submit">Register</button>
