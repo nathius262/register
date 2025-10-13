@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* stling for the body  */
         body{
             background: #ffffff;
             color: #333;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
         }
+        /* styling for the header  */
         header{
             background-color: #b30000;
             color: #fff;
             padding: 1rem 2rem;
         }
+        /* styling for the navigation   */
         nav{
             display: flex;
             justify-content: space-between;
@@ -39,6 +42,7 @@
         nav ul li a:hover{
             color: #ffcccc;
         }
+        /* styling for the body   */
         main{
             flex: 1;
             display: flex;
@@ -46,7 +50,9 @@
             align-items: center;
             padding: 2rem;
         }
+        /* styling for the form  */
         form{
+           
             background: #fff;
             padding: 2rem;
             border-radius: 12px;
@@ -54,12 +60,15 @@
             width: 100%;
             max-width: 400px;
         }
+        /* styling for h1  */
         h1{
+            position: top;
             text-align: center;
             margin-bottom: 1.5rem;
             margin-right: 0.8rem;
             color: #b30000;
         }
+        /* styling for label  */
         label{
             display: block;
             margin-top: 0.5rem;
@@ -67,6 +76,7 @@
             font-weight: 500;
             color: #333;
         }
+        /* styling for input  */
         input[type="text"]
         input[type="password"]{
             width: 100%;
@@ -80,6 +90,7 @@
             border-color: #b30000;
             outline: none;
         }
+        /* styling for the button  */
         button{
             width: 100%;
             margin-top: 0.5rem;
@@ -97,6 +108,7 @@
             background-color: #e60000;
             transform: scale(1.02);
         }
+        /* styling for the footer  */
         footer{
             background-color: #e60000;
             color: #fff;
@@ -105,34 +117,44 @@
             font-size: 0.9rem;
         }
     </style>
-     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> --> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
 
 </head>
 <body>
     <header>
-        <nav >
+        <!-- navigation tab -->
+        <nav id="nav link">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-house-user"> Home </i></a></li>
+                <li><a href=""><i class="fa-solid fa-address-book">  Contact</i></a></li>
+                <li><a href=""><i class="fa-solid fa-briefcase"> Projects</i></a></li>
+                <li><a href=""><i class="fa-solid fa-address-card">  About us</i></a></li>
+            </ul>
 
         </nav>
     </header>
+    <!-- this is where the main segment of the works begin -->
     <main>
-        <h1>Register Form</h1>
+        <!-- this is the registration form -->
         <form action="">
+            <h1>Register</h1>
             <div>
-                <label for="username">Username</label>
+                <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required placeholder="Enter username">
             </div>
             <div>
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input type="text" id="email" name="email" required placeholder="Enter email">
             </div>
             <div>
-                <label for="Password"> Password</label>
+                <label for="Password"> Password:</label>
                 <input type="Password" name="Password" required placeholder="password"> 
             </div>
-            
-                <label for="phone">phone:</label>
-                <input type="digit" id="phone" name="phone" placeholder="input phone number">
+            <div>
+                <label for="confirm password"> Confirm Password:</label>
+                <input type="password" name="confirm password" required placeholder="confirm password">
             </div>
+            
             <div>
                 <label for="gender">Gender:</label> 
                 <select id="gender" name="gender" required>
@@ -145,8 +167,9 @@
             <button type="submit">Register</button>
         </form>
     </main>
+    <!-- this is the footer section -->
     <footer>
-        &copy;2025 D.tech. All rights reserved
+        &copy;2025 Divine.Tech. All rights reserved
     </footer>
 </body>
 </html>
